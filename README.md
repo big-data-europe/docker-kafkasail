@@ -88,4 +88,8 @@ To run and bootstrap KafkaSail example on Marathon
 * note that the bootstrap script, that is included inside the tomcat package will create a KafkaSail repository according to those environmental variables.
 * post the above Marathon Application Setup to Marathon's v2/app endpoint
 * Scale the application inside the Marathon GUI to a number of servers. in this example we will assume that the app is scaled to run on three servers (bigdata-one.example.com, bigdata-two.example.com and bigdata.three.example.com with a port assigned by Mesos)
+ 
+To verify KafkaSail (fun part)
+
 * Open all instances of KafkaSail in different tabs in a browser of your choice, appending /openrdf-workbench to the specific url. if for example the KafkaSail docker container is running on bigdata-one.example.com:31500, then the OpenRDF Workbench' url would be bigdata-one.example.com:31500/openrdf-workbench
+* You now should see
