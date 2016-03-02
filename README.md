@@ -92,4 +92,12 @@ To run and bootstrap KafkaSail example on Marathon
 To verify KafkaSail (fun part)
 
 * Open all instances of KafkaSail in different tabs in a browser of your choice, appending /openrdf-workbench to the specific url. if for example the KafkaSail docker container is running on bigdata-one.example.com:31500, then the OpenRDF Workbench' url would be bigdata-one.example.com:31500/openrdf-workbench
-* You now should see OpenRDF Workbench' start page on all three tabs displaying a list of available repositories, click on KafkaSail repository (if you didn't change KAFKASAIL_REPOSITORY_ID in the previous step). This will take you the page displaying basic info about the current repository. Specifically you should find the "Number of statements" to be 0 under "Repository Size".
+* You now should see OpenRDF Workbench' start page on all three tabs displaying a list of available repositories, click on "KafkaSail" repository (if you didn't change KAFKASAIL_REPOSITORY_ID in the previous step) on all tabs. This will take you a page displaying basic info about the current repository. Specifically you should find the "Number of statements" to be 0 under "Repository Size".
+* Choose one of the tabs and hit "Add" in the menu to the left under "Modify"
+* In the big text box, labeled "RDF Content" insert the following sample triple (including the trailing dot) and hit the upload button.
+
+ ```
+ <https://github.com/big-data-europe/docker-kafkasail> a <http://usefulinc.com/ns/doap#Project> .
+```
+
+* Refresh OpenRDF Workbench's repository overview page on all tabs and checkout the value of "Number of statements"
